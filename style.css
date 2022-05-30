@@ -1,17 +1,125 @@
 body {
-    font-family: sans-serif;
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
  }
-  
+
+ main{
+     padding: 20px;
+     overflow: auto;
+ }
+ h1{
+     text-align: center;
+     object-position: center;
+ } 
  h2 {
-    color: #00a2c6
- }
+     color: #00a2c6
+    }
+    
+    h3 {
+        color: #00a2c6
+    }
+    h1 { 
+        /* color: green;  */
+        margin: 2em;
+    }
+ 
+    p {
+        font-size: small;
+        font-family: sans-serif;
+}
+
+header{
+    display: inline;
+}
+.jumbotron{
+   font-size: 20px;
+   padding: 60px;
+   background-color: #00c8eb; 
+   text-align: center;
+   color: white;
+}
+nav{
+    background-color: #00a2c6;
+    padding: 5px;
+    position: sticky;
+    top: -1px;
+
+}
+nav a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    /* margin: auto; */
+}
+nav a:hover{
+    text-decoration: underline;
+    /* font-weight: 500; */
+    /* background-color: #018baa; */
+}
+nav li{
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    text-align: center;
+    /* align-items: center; */
+}
   
- h3 {
-    color: #00a2c6
- }
-  
- footer {
+footer {
     padding: 20px;
     color: white;
-    background-color: #00a2c6
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
  }
+.profile header {
+    text-align: center;
+ }
+ .profile img{
+     width: 110%;
+ }
+ .featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+
+ }
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+ }
+ #content{
+     float: left;
+     width: 75%;
+     /* overflow: auto; */
+ }
+ aside{
+     float: right;
+     width: 25%;
+     padding-left: 20px;
+     box-sizing: border-box;
+ }
+
+@media screen and (max-width : 1000px) {
+     #content, aside{
+         width: 100%;
+         padding: 0px;
+     }
+     .profile img{
+         text-align: center;
+         object-position: center;
+         width: 60%;
+     }
+     h1{
+     text-align: center;
+     padding: 0px;
+     margin: 0px;
+     }
+}
+@media screen and (max-width : 600px) {
+     
+}
